@@ -205,6 +205,10 @@ font-weight:bold;
 }
 
 /* TO TOP*/
+.container{
+  min-height:100%;
+}
+
 
 .scrollToTop{
   display:block;
