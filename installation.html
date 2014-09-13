@@ -11,23 +11,12 @@
     <link href="css/style.css" rel="stylesheet">
     <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
 
-    <script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-  ga('create', 'UA-54652517-1', 'auto');
-  ga('send', 'pageview');
-
-</script>
-
 </head>
 <body class="bgWhite">
 
 
 <div class="container">
-    <nav class="navbar navbar-default" role="navigation">
+    <nav class="navbar navbar-inverse" role="navigation">
       <!-- Brand and toggle get grouped for better mobile display -->
       
 
@@ -38,7 +27,7 @@
           <li class="hidden-xs"><a><img src="img/pipe.png" height="30px"></a></li> <!-- /desktop only -->
           <li><a class="hidden-sm hidden-md hidden-lg" href="#"><img src="img/rsvp-button.png"></a></li>
 
-          <li><a class="hidden-xs" href="installation.html">INSTALLATION</a></li> <!-- /desktop only -->
+          <li><a class="thisPage-inverse hidden-xs" href="installation.html" style="color:#000">INSTALLATION</a></li> <!-- /desktop only -->
           <li class="hidden-xs"><a><img class="hidden-xs" src="img/pipe.png" height="30px"></a></li> <!-- /desktop only -->
           <li><a class="hidden-sm hidden-md hidden-lg" href="#"><img src="img/rsvp-button.png"></a></li>
 
@@ -79,25 +68,32 @@
 <div class="row" style="padding-top:5%">
   <div class="col-md-4 col-xs-10 center-block" style="float:none">
     <div>
-
+    <img src="img/installation-title.png" class="img-responsive center-block pad-3x">
     <img src="img/installation-tower.jpg" class="img-responsive center-block">
-    <p class="caption">This is a caption</p>
+    <p class="caption pad-2x">This is a caption</p>
     <h4>NEW REFLECTIONS</h4>
     <p>100 Variations is an installation by designer Jonathan Nesci at Eliel Saarinen's First Christian Church in Colombus, Indiana. The installation celebrates the legacy of architect Eliel Saarinen with new reflections on the Golden Ratio.</p>
-    <p> Nesci—an internationally exhibited designer—created 100 unique occasional tables by using the same geometric principles Saarinen used in the early 1940s to design the church. Each table boasts a highly polished surface. When they are installed in the church courtyard, their mirror-like finish will pay homage to the reflecting pool which once stood in the courtyard</p>
+    <p class="pad-2x"> Nesci—an internationally exhibited designer—created 100 unique occasional tables by using the same geometric principles Saarinen used in the early 1940s to design the church. Each table boasts a highly polished surface. When they are installed in the church courtyard, their mirror-like finish will pay homage to the reflecting pool which once stood in the courtyard</p>
     <h4>GOLDEN RATIO</h4>
-    <p>Two quantities obey the golden rule if their ratio is the same or larger than their sum to the larger of the two quantities. Nesci's disciplined adherence to this logic is reflected in the construction of each individual table, which use variations of golden ratio pairs to define their form.</p>
+    <p class="pad-2x">Two quantities obey the golden rule if their ratio is the same or larger than their sum to the larger of the two quantities. Nesci's disciplined adherence to this logic is reflected in the construction of each individual table, which use variations of golden ratio pairs to define their form.</p>
     <img src="img/installation-grid.jpg" class="img-responsive center-block">
-    <p class="caption">This is a caption</p>
+    <p class="caption pad-2x">This is a caption</p>
     <img src="img/installation-saarinen.jpg" class="img-responsive center-block">
-    <p class="caption">This is a caption</p>
+    <p class="caption pad-2x">This is a caption</p>
     <h4>SAARINEN'S LEGACY ON FORM</h4>
     <p>The Finnish architect Eliel Saarinen is best remembered for his art deco buildings of the early 20th Century. Saarinen was educated in Helsinki, and established his practice in the United States in the late 1920s, punctuating the American skyline with forms like the impressive JPMorgan Chase building in Houston and the disciplened First Christian Church in Indiana. Saarinen extended his influence in architecture as a professor at the Cranbrook Academy of Art and the University of Michigan. His colloborations with students like Charles and Ray Eames had a strong influence on furniture design for decades to come. Saarinen's son, Eero Saarinen, bacame the leader of International Style and one of the most important 20th Century architects in America. In 1947, Eliel Saarinen received an AIG Gold Medal in recognition for his work.</p>
+
+
+    <!-- Scroll to top -->
+    <div class="scroll-top-wrapper ">
+        <span class="scroll-top-inner">
+            <span class="icon-bar"></span>
+        </span>
     </div>
 
-    <a class="myButton" href="https://www.facebook.com/events/765572350184399/">
-    <img src="img/rsvp-button.png" class="img-responsive center-block">
-    </a>
+    </div>
+
+  
    
 </div>
 </div>
@@ -113,6 +109,29 @@
 <!-- Include jQuery and bootstrap JS plugins -->
 <script src="jquery/jquery-2.1.0.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
+<script>
+$(function(){
+ 
+    $(document).on( 'scroll', function(){
+ 
+        if ($(window).scrollTop() > 100) {
+            $('.scroll-top-wrapper').addClass('show');
+        } else {
+            $('.scroll-top-wrapper').removeClass('show');
+        }
+    });
+ 
+    $('.scroll-top-wrapper').on('click', scrollToTop);
+});
+ 
+function scrollToTop() {
+    verticalOffset = typeof(verticalOffset) != 'undefined' ? verticalOffset : 0;
+    element = $('body');
+    offset = element.offset();
+    offsetTop = offset.top;
+    $('html, body').animate({scrollTop: offsetTop}, 500, 'linear');
+}
+</script>
   
 </body>
 </html>
