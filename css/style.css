@@ -167,3 +167,12 @@ font-weight:bold;
   border: 2px solid #ffffff;
   vertical-align:middle;
 }
+
+.navbar-nav-var {
+  margin: 7.5px;
+
+}
+.navbar-nav-var > li > a {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  line-height: 20px;
