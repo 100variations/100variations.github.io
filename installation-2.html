@@ -85,7 +85,7 @@
 
 
     <!-- Scroll to top -->
-    <a href="#" class="scrollToTop">Scroll To Top</a>
+    <a href="#" class="top badge badge-success"><i class="icon-circle-arrow-up icon-white"></i> nach oben </a>
 
     </div>
 
@@ -104,24 +104,29 @@
 
 <!-- Include jQuery and bootstrap JS plugins -->
 <script src="jquery/jquery-2.1.0.min.js"></script>
-<script src="http://code.jquery.com/jquery-2.1.0.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
+<script>
+$(function(){
  
-
+    $(document).on( 'scroll', function(){
  
-<!-- Scroll to top script -->
-<script type="text/javascript">
+        if ($(window).scrollTop() > 100) {
+            $('.scroll-top-wrapper').addClass('show');
+        } else {
+            $('.scroll-top-wrapper').removeClass('show');
+        }
+    });
  
-   $(document).ready(function(){
-  
-      //Click event to scroll to top
-      $('.scrollToTop').click(function(){
-        $('html, body').animate({scrollTop : 0},600);
-        return false;
-      });
+    $('.scroll-top-wrapper').on('click', scrollToTop);
+});
  
-   });
- 
+function scrollToTop() {
+    verticalOffset = typeof(verticalOffset) != 'undefined' ? verticalOffset : 0;
+    element = $('body');
+    offset = element.offset();
+    offsetTop = offset.top;
+    $('html, body').animate({scrollTop: offsetTop}, 500, 'linear');
+}
 </script>
   
 </body>

@@ -173,12 +173,14 @@ font-weight:bold;
 .myButton {
   display:block;
   margin-top:25%;
-   margin-bottom:60px;
+  margin-bottom:60px;
   margin-left:25%;
   margin-right:25%;
   border: 2px solid #ffffff;
   vertical-align:middle;
 }
+
+/* page backgrounds */
 
 .bgTransparent{
   background-color:transparent;
@@ -191,6 +193,7 @@ font-weight:bold;
   background-color:#000;
 }
 
+/* custom spacing */
 .pad-3x{
   padding-bottom:15%;
 }
@@ -201,40 +204,41 @@ font-weight:bold;
   padding-bottom:5%;
 }
 
-.scroll-top-wrapper {
-    position: fixed;
-    opacity: 0;
-    visibility: hidden;
-    overflow: hidden;
-    text-align: center;
-    z-index: 99999999;
-    background-color: #777777;
-    color: #eeeeee;
-    width: 50px;
-    height: 48px;
-    line-height: 48px;
-    right: 30px;
-    bottom: 30px;
-    padding-top: 2px;
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
-    border-bottom-right-radius: 10px;
-    border-bottom-left-radius: 10px;
-    -webkit-transition: all 0.5s ease-in-out;
-    -moz-transition: all 0.5s ease-in-out;
-    -ms-transition: all 0.5s ease-in-out;
-    -o-transition: all 0.5s ease-in-out;
-    transition: all 0.5s ease-in-out;
+/* TO TOP*/
+#toTop-right {
+    display:none;
+    text-decoration:none;
+    position:fixed;
+    bottom:20px;
+    right:20px;
+    outline:none;
 }
-.scroll-top-wrapper:hover {
-    background-color: #888888;
+#toTop-left {
+    display:none;
+    text-decoration:none;
+    position:fixed;
+    bottom:20px;
+    left:20px;
+    outline:none;
 }
-.scroll-top-wrapper.show {
-    visibility:visible;
-    cursor:pointer;
-    opacity: 1.0;
+#toTop-center {
+    display:none;
+    text-decoration:none;
+    position:fixed;
+    bottom:10px;
+    left:50%;
+    margin-left:-20px; /*Feintuning je nach Inhalt */
+    outline:none;
 }
-.scroll-top-wrapper i.fa {
-    line-height: inherit;
-}
- 
+ var defaults = {            
+   autoLinkPos: 'toTop-right', //toTop-left, toTop-center
+   autoLinkClass: 'btn btn-large btn-danger', // example:'badge badge-warning' 'label label-info'
+   autoLinkText: 'nach oben', //Linktext, optional wenn Icon vorhanden   
+   autoLinkIcon: 'icon-chevron-up icon-white', //Bootstrap Icon, optional wenn Text vorhanden
+   easingType: 'easeOutBounce',  //default without Easing: 'linear' or 'swing'        
+   min: 400, //Anzahl gescrollter Pixel bis zum Einblenden
+   inDelay:500,
+   outDelay:500,
+   scrollSpeed: 750, //Scrolldauer
+   contentLinkClass: 'top' //class Name der manuellen Contentlinks
+};
