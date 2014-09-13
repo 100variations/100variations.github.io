@@ -188,12 +188,12 @@ font-weight:bold;
 .bgWhite{
   background-color:#fff;
 }
-
 .bgBlack{
   background-color:#000;
 }
 
 /* custom spacing */
+
 .pad-3x{
   padding-bottom:15%;
 }
@@ -205,40 +205,36 @@ font-weight:bold;
 }
 
 /* TO TOP*/
-#toTop-right {
-    display:none;
-    text-decoration:none;
-    position:fixed;
-    bottom:20px;
-    right:20px;
-    outline:none;
+
+.scrollToTop{
+  display:block;
+  margin-bottom:60px;
+  margin-left:25%;
+  margin-right:25%;
+  vertical-align:middle;
 }
-#toTop-left {
-    display:none;
-    text-decoration:none;
-    position:fixed;
-    bottom:20px;
-    left:20px;
-    outline:none;
+
+.scrollToTop:hover{
+  text-decoration:none;
 }
-#toTop-center {
-    display:none;
-    text-decoration:none;
-    position:fixed;
-    bottom:10px;
-    left:50%;
-    margin-left:-20px; /*Feintuning je nach Inhalt */
-    outline:none;
+
+/* Form Fields*/
+
+.form-control {
+  display: block;
+  width: 100%;
+  height: 60px;
+  padding: 6px 12px;
+  font-size: 14px;
+  line-height: 1.42857143;
+  color: #fff;
+  background-color: #000;
+  background-image: none;
+  border: 2px solid #ccc;
+  border-radius: 0px;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+          box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+  -webkit-transition: border-color ease-in-out .15s, -webkit-box-shadow ease-in-out .15s;
+       -o-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+          transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
 }
- var defaults = {            
-   autoLinkPos: 'toTop-right', //toTop-left, toTop-center
-   autoLinkClass: 'btn btn-large btn-danger', // example:'badge badge-warning' 'label label-info'
-   autoLinkText: 'nach oben', //Linktext, optional wenn Icon vorhanden   
-   autoLinkIcon: 'icon-chevron-up icon-white', //Bootstrap Icon, optional wenn Text vorhanden
-   easingType: 'easeOutBounce',  //default without Easing: 'linear' or 'swing'        
-   min: 400, //Anzahl gescrollter Pixel bis zum Einblenden
-   inDelay:500,
-   outDelay:500,
-   scrollSpeed: 750, //Scrolldauer
-   contentLinkClass: 'top' //class Name der manuellen Contentlinks
-};
