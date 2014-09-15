@@ -1,87 +1,55 @@
+/* first for IE 4–8 */
+@font-face {
+  font-family: MarkWeb;
+  src: url("../fonts/MarkWeb.eot");
+}
+
+/* then for WOFF-capable browsers */
+@font-face {
+  font-family: MarkWeb;
+  src: url("../fonts/MarkWeb.woff") format("woff");
+}
+
+@font-face {
+  font-family: MarkWebBold;
+  src: url("../fonts/MarkWeb-Bold.woff") format("woff");
+  font-weight: bold;
+
+}
+
+@font-face {
+  font-family: MarkWebMedium;
+  src: url("../fonts/MarkWeb-Medium.woff") format("woff");
+  font-weight: bolder;
+}
+
+* {
+ font-family: MarkWeb, "Helvetica Neue", "Helvetica", "Arial", sans-serif !important;
+}
+
 html { 
-  min-height:100%;
-
-}
-
-/* first for IE 4–8 */
-@font-face {
-  font-family: MarkWeb;
-  src: url('../fonts/MarkWeb.eot');
-}
-
-/* then for WOFF-capable browsers */
-@font-face {
-  font-family: MarkWeb;
-  src: url('../fonts/MarkWeb.woff') format('woff');
-}
-
-/* first for IE 4–8 */
-@font-face {
-  font-family: MarkWebItalic;
-  src: url('../fonts/MarkWebItalic.eot');
-}
-
-/* then for WOFF-capable browsers */
-@font-face {
-  font-family: MarkWebItalic;
-  src: url('../fonts/MarkWebItalic.woff') format('woff');
-}
-
-/* first for IE 4–8 */
-@font-face {
-  font-family: MarkWebBold;
-  src: url('../fonts/MarkWebBold.eot');
-}
-
-/* then for WOFF-capable browsers */
-@font-face {
-  font-family: MarkWebBold;
-  src: url('../fonts/MarkWebBold.woff') format('woff');
-}
-
-/* first for IE 4–8 */
-@font-face {
-  font-family: MarkWebLight;
-  src: url('../fonts/MarkWebLight.eot');
-}
-
-/* then for WOFF-capable browsers */
-@font-face {
-  font-family: MarkWebLight;
-  src: url('../fonts/MarkWebLight.woff') format('woff');
-}
-
-/* first for IE 4–8 */
-@font-face {
-  font-family: MarkWebMedium;
-  src: url('../fonts/MarkWebMedium.eot');
-}
-
-/* then for WOFF-capable browsers */
-@font-face {
-  font-family: MarkWebMedium;
-  src: url('../fonts/MarkWebMedium.woff') format('woff');
-}
-
-
-
-body{
-  font-family: MarkScWeb, sans-serif;
   min-height: 100%;
 }
 
-@import url(http://fonts.googleapis.com/css?family=Lato:300,400,700);
-h1, h2, h3, h4 {
-    font-family: 'Lato', sans-serif;
-    font-weight: 300;
+body{
+  min-height: 100%;
 }
-p {
-    font-family: 'Lato', sans-serif;
+
+/* TYPOGRAPHY */
+
+h1 {
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: bold;
+  padding-bottom: 15%;
 }
+
+
+/* STRUCTURE */
 
 .top {
     background-color: transparent;
-    margin:0 auto;
+    margin: 0 auto;
 }
 .top .navbar-brand {
     height: 60px;
@@ -146,10 +114,17 @@ p {
   background-color: transparent;
   border: none;
   color:#999;
+  letter-spacing: 1px;  
 }
 
  .navbar-inverse .navbar-nav> li > a {
+  border-right: 1px solid #ccc;
+  padding-left: 10px;
+  padding-right: 10px;
   color: #B8B8B8;
+}
+ .navbar-inverse .navbar-nav li a.last-nav-item  {
+  border: none;
 }
 
 .navbar-inverse .navbar-nav > li > a:hover {
@@ -164,7 +139,6 @@ p {
 .navbar .navbar-collapse {
   text-align: center;
   color: #000;
-
 }
 
 .navbar-nav > li {

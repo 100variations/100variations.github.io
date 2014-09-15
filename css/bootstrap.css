@@ -11,7 +11,6 @@ html {
       -ms-text-size-adjust: 100%;
 }
 body {
-  font-family: MarkScWeb, sans-serif;
   margin: 0;
 }
 
@@ -264,65 +263,6 @@ th {
   }
 }
 
-/* first for IE 4–8 */
-@font-face {
-  font-family: MarkWeb;
-  src: url('../fonts/MarkWeb.eot');
-}
-
-/* then for WOFF-capable browsers */
-@font-face {
-  font-family: MarkWeb;
-  src: url('../fonts/MarkWeb.woff') format('woff');
-}
-
-/* first for IE 4–8 */
-@font-face {
-  font-family: MarkWebItalic;
-  src: url('../fonts/MarkWebItalic.eot');
-}
-
-/* then for WOFF-capable browsers */
-@font-face {
-  font-family: MarkWebItalic;
-  src: url('../fonts/MarkWebItalic.woff') format('woff');
-}
-
-/* first for IE 4–8 */
-@font-face {
-  font-family: MarkWebBold;
-  src: url('../fonts/MarkWebBold.eot');
-}
-
-/* then for WOFF-capable browsers */
-@font-face {
-  font-family: MarkWebBold;
-  src: url('../fonts/MarkWebBold.woff') format('woff');
-}
-
-/* first for IE 4–8 */
-@font-face {
-  font-family: MarkWebLight;
-  src: url('../fonts/MarkWebLight.eot');
-}
-
-/* then for WOFF-capable browsers */
-@font-face {
-  font-family: MarkWebLight;
-  src: url('../fonts/MarkWebLight.woff') format('woff');
-}
-
-/* first for IE 4–8 */
-@font-face {
-  font-family: MarkWebMedium;
-  src: url('../fonts/MarkWebMedium.eot');
-}
-
-/* then for WOFF-capable browsers */
-@font-face {
-  font-family: MarkWebMedium;
-  src: url('../fonts/MarkWebMedium.woff') format('woff');
-}
 
 
 @font-face {
