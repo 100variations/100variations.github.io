@@ -444,8 +444,12 @@ input[type="text"]:focus {
 /*Images*/
 .img-logo{
   display:inline-block;
-  max-height:200px;
+  max-height:50px;
   max-width:auto;
+}
+
+.img-logo-new{
+padding-right:10px;
 }
 
 .img-biennial{
