@@ -45,37 +45,78 @@ body{
 h1 {
   text-transform: uppercase;
   letter-spacing: 2px;
-  padding-bottom: 15%;
+  padding-bottom: 20%;
 }
 
 h1.installation{
-  font-family:MarkWeb-Bold;
-  text-align:center;
+  background: transparent url(../img/installation-title.png) no-repeat top center;
+  background-size: 100% auto;
+  width: 100%;
+  height: 48px;
+  display: inline-block;
+  overflow: hidden;
+  text-indent: -9999px;
+  text-align: center;
+/*  font-family:MarkWeb-Bold;
+  text-align:center;*/
 }
 h1.artist{
-  font-family:MarkWeb-Light;
-  text-align:center;
+  background: transparent url(../img/artist-title.png) no-repeat top center;
+  background-size: 100% auto;
+  width: 100%;
+  height: 48px;
+  display: inline-block;
+  overflow: hidden;
+  text-indent: -9999px;
+  text-align: center;
+  /*font-family:MarkWeb-Light;*/
+  /*text-align:center;*/
 }
 h1.biennial{
-  font-size:20px;
-  text-align:center;
+  background: transparent url(../img/biennial-title.png) no-repeat top center;
+  background-size: 100% auto;
+  width: 100%;
+  height: 48px;
+  display: inline-block;
+  overflow: hidden;
+  text-indent: -9999px;
+  text-align: center;
+/*  font-size:20px;
+  text-align:center;*/
 }
 h1.sponsors-1{
-  font-family:MarkWeb-Bold;
+  display:none;
+  /*font-family:MarkWeb-Bold;
   font-size:19.5px;
   text-align:center;
   padding-bottom:0px;
-  letter-spacing: 4px;
+  letter-spacing: 4px;*/
 }
 h1.sponsors-2{
-  font-family:MarkWeb-Bold;
+  background: transparent url(../img/sponsors-title.png) no-repeat top center;
+  background-size: 100% auto;
+  width: 100%;
+  height: 48px;
+  display: inline-block;
+  overflow: hidden;
+  text-indent: -9999px;
+  text-align: center;
+  /*font-family:MarkWeb-Bold;
   text-align:center;
-  padding-bottom:5%;
+  padding-bottom:5%;*/
 }
 h1.inquiries{
-  font-family:MarkWeb-Light;
+  background: transparent url(../img/inquiries-title.png) no-repeat top center;
+  background-size: 100% auto;
+  width: 100%;
+  height: 48px;
+  display: inline-block;
+  overflow: hidden;
+  text-indent: -9999px;
+  text-align: center;
+/*  font-family:MarkWeb-Light;
   color:#fff;
-  text-align:center;
+  text-align:center;*/
 }
 h4{
   font-family:MarkWeb-Bold;
@@ -111,13 +152,17 @@ padding-top:5%;
   .caption {
   font-size:13px;
 }
+/*
 h1.artist{
+  background: url(../img/artist-title.png) no-repeat center right;
   font-family:MarkWeb-Light;
   text-align:center;
   font-size:25px;
   letter-spacing:4px;
 }
-  h1.sponsors-1{
+*/  
+/*
+h1.sponsors-1{
   font-size:12px;
   text-align:center;
   letter-spacing: 1px;
@@ -131,7 +176,7 @@ h1.inquiries{
   text-align:center;
   font-size:20px;
   letter-spacing:3px;
-}
+}*/
 }
    
     
