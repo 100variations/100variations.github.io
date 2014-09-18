@@ -22,6 +22,10 @@
   font-family: MarkWeb-Medium;
   src: url("../fonts/MarkWeb-Medium.woff") format("woff");
 }
+@font-face {
+  font-family: MarkWeb-Light;
+  src: url("../fonts/MarkWeb-Light.woff") format("woff");
+}
 
 
 
@@ -30,22 +34,47 @@ html {
 }
 
 body{
+  font-size:14px;
+  line-height: 1.5;
   min-height: 100%;
-  font-family: MarkWeb, MarkScWeb-Bold,"Helvetica Neue", "Helvetica", "Arial", sans-serif !important;
+  font-family: MarkWeb, MarkScWeb-Bold,MarkWeb-Light,"Helvetica Neue", "Helvetica", "Arial", sans-serif !important;
 }
 
 /* TYPOGRAPHY */
 
 h1 {
-  font-family:MarkScWeb-Bold;
+  font-family:MarkWeb-Bold;
   text-transform: uppercase;
   letter-spacing: 2px;
   padding-bottom: 15%;
 }
 
-h1.title{
+h1.installation{
   text-align:center;
 }
+h1.artist{
+  font-family:MarkWeb-Light;
+  text-align:center;
+}
+h1.biennial{
+  text-align:center;
+}
+h1.sponsors{
+  text-align:center;
+}
+h1.inquiries{
+  text-align:center;
+}
+ 
+@media screen and (max-width: 480px) {
+  body
+  {
+    font-size: 16px; 
+    line-height: 1.4;
+  }
+}
+   
+    
 
 /* STRUCTURE */
 
@@ -256,7 +285,7 @@ font-weight:bold;
 
 /* Form Fields*/
 
-.form-control {
+.form-control, select.input-lg {
   display: block;
   width: 100%;
   height: 60px;
@@ -266,7 +295,7 @@ font-weight:bold;
   color: #fff;
   background-color: #000;
   background-image: none;
-  border: 2px solid #ccc;
+  border: 1px solid #999;
   border-radius: 0px;
   -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
           box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
@@ -274,4 +303,27 @@ font-weight:bold;
        -o-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
           transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
 }
+
+select.input-lg {
+
+  -webkit-appearance: none;
+  -webkit-box-shadow: none;
+  -webkit-border-radius: 0;
+  -webkit-padding-start: 0;
+
+  padding: 6px 12px;
+  font: 14px/17px MarkWeb, MarkScWeb-Bold,MarkWeb-Light,"Helvetica Neue", "Helvetica", "Arial", sans-serif !important;
+
+}
+
+
+
+.form-control:focus {
+  border-color: #fff;
+}
+
+input[type="text"]:focus {
+  color: #fff;
+}
+
 
