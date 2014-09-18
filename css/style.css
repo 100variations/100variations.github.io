@@ -380,6 +380,7 @@ select.input-lg {
   -webkit-border-radius: 0;
   -webkit-padding-start: 0;
 
+  background: url(../img/arrow-down-sm-wht.png) no-repeat center right;
   padding: 6px 12px;
   font: 14px/17px MarkWeb, MarkScWeb-Bold,MarkWeb-Light,"Helvetica Neue", "Helvetica", "Arial", sans-serif !important;
 
@@ -400,6 +401,11 @@ input[type="text"]:focus {
   display:inline-block;
   max-height:200px;
   max-width:auto;
+}
+
+.img-biennial{
+  padding-right:0px;
+  padding-left:0px;
 }
 
 
