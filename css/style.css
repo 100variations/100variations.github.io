@@ -35,21 +35,21 @@ html {
 
 body{
   font-size:14px;
-  line-height: 1.5;
+  line-height: 1.5em;
   min-height: 100%;
-  font-family: MarkWeb, MarkScWeb-Bold,MarkWeb-Light,"Helvetica Neue", "Helvetica", "Arial", sans-serif !important;
+  font-family: MarkWeb, MarkWeb-Bold,MarkWeb-Light,"Helvetica Neue", "Helvetica", "Arial", sans-serif !important;
 }
 
 /* TYPOGRAPHY */
 
 h1 {
-  font-family:MarkWeb-Bold;
   text-transform: uppercase;
   letter-spacing: 2px;
   padding-bottom: 15%;
 }
 
 h1.installation{
+  font-family:MarkWeb-Bold;
   text-align:center;
 }
 h1.artist{
@@ -57,21 +57,81 @@ h1.artist{
   text-align:center;
 }
 h1.biennial{
+  font-size:20px;
   text-align:center;
 }
-h1.sponsors{
+h1.sponsors-1{
+  font-family:MarkWeb-Bold;
+  font-size:19.5px;
   text-align:center;
+  padding-bottom:0px;
+  letter-spacing: 4px;
+}
+h1.sponsors-2{
+  font-family:MarkWeb-Bold;
+  text-align:center;
+  padding-bottom:5%;
 }
 h1.inquiries{
+  font-family:MarkWeb-Light;
+  color:#fff;
   text-align:center;
+}
+h4{
+  font-family:MarkWeb-Bold;
+  text-transform: uppercase;
+  font-size: 15px;
+  letter-spacing: 1px;
+  padding-bottom:2.5%;
+}
+
+p {
+  font-size: 15px;
+  line-height: 1.6em;
+  padding-bottom:2.5%;
+
+}
+
+.caption {
+font-family: MarkWeb-Bold;
+text-align:left;
+padding-top:5%;
+
 }
  
 @media screen and (max-width: 480px) {
   body
   {
     font-size: 16px; 
-    line-height: 1.4;
+    line-height: 1.4em;
   }
+  p {
+    font-size: inherit;
+  }
+  .caption {
+  font-size:13px;
+}
+h1.artist{
+  font-family:MarkWeb-Light;
+  text-align:center;
+  font-size:25px;
+  letter-spacing:4px;
+}
+  h1.sponsors-1{
+  font-size:12px;
+  text-align:center;
+  letter-spacing: 1px;
+}
+h1.sponsors-2{
+  text-align:center;
+  font-size:17px;
+}
+h1.inquiries{
+  font-family:MarkWeb-Light;
+  text-align:center;
+  font-size:20px;
+  letter-spacing:3px;
+}
 }
    
     
@@ -116,7 +176,7 @@ h1.inquiries{
 /* Navbar */
 
 .navbar{
-   margin-top:10px;
+   margin-top:0;
    letter-spacing: 1px; 
    text-align:center;
 }
@@ -128,7 +188,7 @@ h1.inquiries{
   padding-right: 10px;
 }
  .navbar .navbar-nav> li > a {
-  border-right: 1px solid #333;
+  border-right: 1px solid rgba(255, 255, 255, 0.2);
   padding-left: 10px;
   padding-right: 10px;
 }
@@ -140,7 +200,8 @@ h1.inquiries{
   color:#fff;
 }
 .navbar-default .navbar-nav > li > a {
-  color: #B8b8b8;
+  /*color: #B8b8b8;*/
+  color: rgba(255, 255, 255, 0.4);
 }
 .navbar-default .navbar-nav > li > a:hover {
   color: #fff;
@@ -225,22 +286,30 @@ h1.inquiries{
     text-align: center;
 }
 
-.caption {
-text-align:left;
-padding-top:5%;
-font-weight:bold;
-}
 
-.myButton {
+
+a.my-button {
+  height:60px;
+  padding-top:15px;
   display:block;
-  margin-top:25%;
+  text-align:center;
+  color:#fff;
+  margin-top:10%;
   margin-bottom:60px;
   margin-left:25%;
   margin-right:25%;
   border: 2px solid #ffffff;
   vertical-align:middle;
+  letter-spacing:3px;
+  text-transform: uppercase;
+  font-size:20px;
+  line-height:1.5em;
 }
-
+a.my-button:hover {
+  color:#999;
+  border: 2px solid #999;
+  text-decoration:none;
+}
 /* page backgrounds */
 
 .bgTransparent{
@@ -324,6 +393,13 @@ select.input-lg {
 
 input[type="text"]:focus {
   color: #fff;
+}
+
+/*Images*/
+.img-logo{
+  display:inline-block;
+  max-height:200px;
+  max-width:auto;
 }
 
 
