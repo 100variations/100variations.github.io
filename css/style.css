@@ -186,6 +186,7 @@ h1.inquiries{
 .top {
     background-color: transparent;
     margin: 0 auto;
+    margin-top:10px;
 }
 .top .container {
     background-color: transparent;
