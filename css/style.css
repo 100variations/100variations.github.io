@@ -118,6 +118,11 @@ h1.inquiries{
   color:#fff;
   text-align:center;*/
 }
+
+h2.biennial-type{
+font-size:38px;
+line-height: 1.6em;
+}
 h4{
   font-family:MarkWeb-Bold;
   text-transform: uppercase;
@@ -151,7 +156,11 @@ padding-top:5%;
   }
   .caption {
   font-size:13px;
-}
+  }
+  h2.biennial-type{
+  font-size:19px;
+  line-height: 1.4em;
+  }
 /*
 h1.artist{
   background: url(../img/artist-title.png) no-repeat center right;
@@ -376,6 +385,9 @@ a.my-button:hover {
 .pad-2x{
   padding-bottom:10%;
 }
+.pad-top-2x{
+  padding-top:10%;
+}
 .pad-1x{
   padding-bottom:5%;
 }
@@ -458,4 +470,26 @@ padding-right:10px;
   padding-left:0px;
 }
 
+#biennial { 
+  background: url(../img/biennial-img1.png) no-repeat 50% 0 fixed; 
+  height: auto;  
+  margin: 0 auto; 
+  width: 100%; 
+  position: relative; 
+  padding: 400px 0;
+}
+
+@media screen and (max-width: 480px) {
+  #biennial{
+    padding:200px 0;
+  }
+}
+    #home { 
+      height: auto;  
+      margin: 0 auto; 
+      width: 100%; 
+      position: relative; 
+    }
+
+ 
 
