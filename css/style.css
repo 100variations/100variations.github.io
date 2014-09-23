@@ -478,8 +478,6 @@ select.input-lg {
 
 }
 
-
-
 .form-control:focus {
   border-color: #fff;
 }
@@ -487,6 +485,16 @@ select.input-lg {
 input[type="text"]:focus {
   color: #fff;
 }
+
+.missing {
+	border-color: #f00 !important;
+}
+
+#error {
+	color: #f00;
+	text-align: center;
+}
+
 
 /*Images*/
 .img-logo{

@@ -5,19 +5,22 @@
     <meta charset="utf-8">
     <!-- Set the viewport so this responsive site displays correctly on mobile devices -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>100 Variations Artist</title>
+    <title>100 Variations Confirmation</title>
     <!-- Include bootstrap CSS -->
     <link href="css/bootstrap.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
     <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+
 </head>
 <body class="bgBlack">
 
 
 <div class="container-fluid">
     <nav class="navbar navbar-default" role="navigation">
+      <!-- Brand and toggle get grouped for better mobile display -->
+      
 
-     <!-- Collect the nav links, forms, and other content for toggling -->
+      <!-- Collect the nav links, forms, and other content for toggling -->
       <div class="collapse navbar-collapse navbar-ex1-collapse">
         <ul class="nav navbar-nav">
           <li><a class="hidden-xs" href="index.html">Home</a></li> <!-- /desktop only -->
@@ -56,41 +59,23 @@
 
 
 
-<!-- Site banner -->
-<div class="container-fluid">
+ <!-- Site banner -->
+ <div class="container-fluid">
 <div class="row">
   <div class="col-md-4 col-xs-12 center-block" style="float:none">
-    <div>
-	<form method="post" action="./php/mail-engine.php">
-	    <h1 class="inquiries">Reserve an Original</h1>    
-	    <div class="pad-1x">
-	    <select id="gallery" name="gallery" class="form-control input-lg">
-			<option value="-">Select a Gallery</option>
-			<option value="A">New York: Patrick Parish Gallery</option>
-			<option value="B">Chicago: Volume Gallery</option>
-			<option value="C">US/International: Casati Gallery</option>			
-	    </select>
-	    </div>
-	    <div class="pad-1x">
-	    <input id="name" name="name" class="required form-control input-lg" type="text" placeholder="Name">
-	    </div>
-	    <div class="pad-1x">
-	    <input id="email" name="email" class="required form-control input-lg" type="text" placeholder="Email">
-	    </div>
-	    <div class="pad-1x">
-	    <input id="tel" name="tel" class="required form-control input-lg" type="text" placeholder="Phone">
-	    </div>
-	    <div class="pad-1x">
-	    <textarea id="message" name="message" class="form-control input-lg" rows="6">Hello, I&rsquo;m interested in 100 Variations by Jonathan Nesci. Could you please confirm its availability? Thank you.</textarea>
-	    </div>
-	    <a class="form-submit my-button" href="#">Submit</a>
-	    <div class="pad-1x">
-	    <p id="error"></p>
-	    </div>
-	</form>
-    </div>   
+    <h1 class="confirmation">Thank You</h1>   
+    <p class="dark pad-1x">We have received your information request for 100 Variations by Jonathan Nesci. A gallery representative will contact you by email shortly.</p>
+    <p class="dark pad-1x">Thank you again for your interest.</p>
+
+
+  
+   
 </div>
-</div>
+    
+
+
+  
+   
 </div>
 
 </div> <!-- /container -->
@@ -105,50 +90,9 @@
 <script src="http://code.jquery.com/jquery-2.1.0.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
  
+
+ 
 <!-- Scroll to top script -->
-<script type="text/javascript">
-   $(document).ready(function(){
-	
-	$("a.form-submit").on("click", function(e){
-		e.preventDefault();
-	    var check = true;
-	    var error = false;
-	    
-	    $('#error').html('');
-	    $('.missing').removeClass("missing");
-	    
-	    if ($('#gallery').val() == "-"){
-	            check = false;	 
-	            $('#gallery').addClass("missing");
-	            $('#error').html($('#error').html() + 'Please select a gallery.<br/>');   	
-	    };	    
-	    $('.required').each(function(){
-	        if (this.value == "") {
-	        	check = false;
-	            $(this).addClass("missing");
-	            if (!error){
-	            	$('#error').html($('#error').html() + 'Please fill out the required fields above.<br/>');
-	            	error = true;
-	            }
-	        }
-	    });
-	    if (check){
-	        document.forms[0].submit();				
-		} else {
-			return false;
-		}
-	
-	}); 
-		 
-      //Click event to scroll to top
-      $('.scrollToTop').click(function(){
-        $('html, body').animate({scrollTop : 0},600);
-        return false;
-      });
- 
-   });
- 
-</script>
   
 </body>
 </html>
